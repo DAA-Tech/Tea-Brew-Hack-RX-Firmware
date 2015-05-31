@@ -1,0 +1,13 @@
+<SHT1x_click>
+	<Attributes>
+		<Url></Url>
+		<Image>sht1x_click.jpg</Image>
+		<File></File>
+	</Attributes>
+	<Events>
+		<OnLeftClick></OnLeftClick>
+		<OnRightClick></OnRightClick>
+		<OnDblClick></OnDblClick>
+		<OnMouseOver>PreviewImage</OnMouseOver>
+	</Events>
+</SHT1x_click>
