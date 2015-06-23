@@ -1,6 +1,6 @@
 [DEVICE]
 Name=STM32F407VG
-Clock=72000000
+Clock=8000000
 [MEMORY_MODEL]
 Value=-1
 [BUILD_TYPE]
@@ -32,16 +32,16 @@ File1=SHT11_driver.c
 [EEPROM]
 Count=0
 [ACTIVE_COMMENTS_FILES]
-Count=2
-File0=
-File1=SHT1x_click.xml
+Count=1
+File0=SHT1x_click.xml
 [OTHER_FILES]
 Count=0
 [SEARCH_PATH]
-Count=3
+Count=4
 Path0=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\defs\
-Path1=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\
-Path2=C:\Users\ayo\Downloads\Tea Brew Hack Firmware\
+Path1=C:\Users\Ayodele\Google Drive\DAA STEM Academy\Hack Software\Tea Brew Hack Firmware\Tea Brew Hack RX Firmware\
+Path2=C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M4\
+Path3=C:\Users\ayo\Downloads\Tea Brew Hack Firmware\
 [HEADER_PATH]
 Count=0
 [HEADERS]
@@ -49,13 +49,14 @@ Count=0
 [PLDS]
 Count=0
 [Useses]
-Count=6
+Count=7
 File0=C_String
 File1=C_Type
 File2=C_Stdlib
 File3=C_Math
 File4=Conversions
 File5=Sprintf
+File6=UART
 [EXPANDED NODES]
 Node1=Sources
 Node2=Image Files

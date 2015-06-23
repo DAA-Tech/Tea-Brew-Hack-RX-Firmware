@@ -13,14 +13,13 @@ MOVW	R0, #lo_addr(SCL_pin+0)
 MOVT	R0, #hi_addr(SCL_pin+0)
 STR	R1, [R0, #0]
 ;SHT11_driver.c,65 :: 		Delay_uS(1);
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_transstart0:
 SUBS	R7, R7, #1
 BNE	L_s_transstart0
-NOP
 NOP
 NOP
 ;SHT11_driver.c,66 :: 		SCL_pin = 1;
@@ -30,14 +29,13 @@ MOVW	R0, #lo_addr(SCL_pin+0)
 MOVT	R0, #hi_addr(SCL_pin+0)
 STR	R1, [R0, #0]
 ;SHT11_driver.c,67 :: 		Delay_uS(1);
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_transstart2:
 SUBS	R7, R7, #1
 BNE	L_s_transstart2
-NOP
 NOP
 NOP
 ;SHT11_driver.c,69 :: 		SDA_pin_out = 0;                       // SDA low
@@ -47,14 +45,13 @@ MOVW	R0, #lo_addr(SDA_pin_out+0)
 MOVT	R0, #hi_addr(SDA_pin_out+0)
 STR	R1, [R0, #0]
 ;SHT11_driver.c,70 :: 		Delay_uS(1);
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_transstart4:
 SUBS	R7, R7, #1
 BNE	L_s_transstart4
-NOP
 NOP
 NOP
 ;SHT11_driver.c,71 :: 		SCL_pin = 0;
@@ -64,7 +61,7 @@ MOVW	R0, #lo_addr(SCL_pin+0)
 MOVT	R0, #hi_addr(SCL_pin+0)
 STR	R1, [R0, #0]
 ;SHT11_driver.c,72 :: 		Delay_uS(3);
-MOVW	R7, #70
+MOVW	R7, #6
 MOVT	R7, #0
 NOP
 NOP
@@ -81,14 +78,13 @@ MOVW	R0, #lo_addr(SCL_pin+0)
 MOVT	R0, #hi_addr(SCL_pin+0)
 STR	R1, [R0, #0]
 ;SHT11_driver.c,74 :: 		Delay_uS(1);
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_transstart8:
 SUBS	R7, R7, #1
 BNE	L_s_transstart8
-NOP
 NOP
 NOP
 ;SHT11_driver.c,76 :: 		SDA_pin_out = 1;                       //release DATA-line
@@ -98,14 +94,13 @@ MOVW	R0, #lo_addr(SDA_pin_out+0)
 MOVT	R0, #hi_addr(SDA_pin_out+0)
 STR	R1, [R0, #0]
 ;SHT11_driver.c,77 :: 		Delay_uS(1);
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_transstart10:
 SUBS	R7, R7, #1
 BNE	L_s_transstart10
-NOP
 NOP
 NOP
 ;SHT11_driver.c,78 :: 		SCL_pin = 0;
@@ -159,14 +154,13 @@ MOVW	R1, #lo_addr(SCL_pin+0)
 MOVT	R1, #hi_addr(SCL_pin+0)
 STR	R2, [R1, #0]
 ;SHT11_driver.c,96 :: 		Delay_uS(1);
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_read_byte14:
 SUBS	R7, R7, #1
 BNE	L_s_read_byte14
-NOP
 NOP
 NOP
 ;SHT11_driver.c,97 :: 		if (SDA_pin_in == 1)
@@ -195,14 +189,13 @@ MOVW	R1, #lo_addr(SCL_pin+0)
 MOVT	R1, #hi_addr(SCL_pin+0)
 STR	R2, [R1, #0]
 ;SHT11_driver.c,102 :: 		Delay_uS(1);
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_read_byte17:
 SUBS	R7, R7, #1
 BNE	L_s_read_byte17
-NOP
 NOP
 NOP
 ;SHT11_driver.c,103 :: 		i=(i>>1);
@@ -243,7 +236,7 @@ MOVW	R1, #lo_addr(SCL_pin+0)
 MOVT	R1, #hi_addr(SCL_pin+0)
 STR	R2, [R1, #0]
 ;SHT11_driver.c,117 :: 		Delay_uS(3);
-MOVW	R7, #70
+MOVW	R7, #6
 MOVT	R7, #0
 NOP
 NOP
@@ -260,14 +253,13 @@ MOVW	R1, #lo_addr(SCL_pin+0)
 MOVT	R1, #hi_addr(SCL_pin+0)
 STR	R2, [R1, #0]
 ;SHT11_driver.c,119 :: 		Delay_uS(1);
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_read_byte23:
 SUBS	R7, R7, #1
 BNE	L_s_read_byte23
-NOP
 NOP
 NOP
 ;SHT11_driver.c,121 :: 		SDA_pin_out = 1;        //release DATA-line
@@ -342,7 +334,7 @@ MOVW	R1, #lo_addr(SCL_pin+0)
 MOVT	R1, #hi_addr(SCL_pin+0)
 STR	R2, [R1, #0]
 ;SHT11_driver.c,145 :: 		Delay_uS(3);
-MOVW	R7, #70
+MOVW	R7, #6
 MOVT	R7, #0
 NOP
 NOP
@@ -359,7 +351,7 @@ MOVW	R1, #lo_addr(SCL_pin+0)
 MOVT	R1, #hi_addr(SCL_pin+0)
 STR	R2, [R1, #0]
 ;SHT11_driver.c,147 :: 		Delay_uS(3);
-MOVW	R7, #70
+MOVW	R7, #6
 MOVT	R7, #0
 NOP
 NOP
@@ -389,7 +381,7 @@ MOVW	R1, #lo_addr(SCL_pin+0)
 MOVT	R1, #hi_addr(SCL_pin+0)
 STR	R2, [R1, #0]
 ;SHT11_driver.c,154 :: 		Delay_uS(3);
-MOVW	R7, #70
+MOVW	R7, #6
 MOVT	R7, #0
 NOP
 NOP
@@ -414,14 +406,13 @@ L__s_write_byte64:
 L_s_write_byte35:
 ;SHT11_driver.c,156 :: 		Delay_uS(1);
 ; error start address is: 0 (R0)
-MOVW	R7, #22
+MOVW	R7, #1
 MOVT	R7, #0
 NOP
 NOP
 L_s_write_byte36:
 SUBS	R7, R7, #1
 BNE	L_s_write_byte36
-NOP
 NOP
 NOP
 ;SHT11_driver.c,157 :: 		SCL_pin = 0;
@@ -507,7 +498,7 @@ CMP	R0, #240
 IT	CS
 BCS	L__s_measure65
 ;SHT11_driver.c,193 :: 		Delay_mS(1);
-MOVW	R7, #23998
+MOVW	R7, #2665
 MOVT	R7, #0
 NOP
 NOP
@@ -516,9 +507,8 @@ SUBS	R7, R7, #1
 BNE	L_s_measure43
 NOP
 NOP
-NOP
 ;SHT11_driver.c,194 :: 		Delay_mS(1);
-MOVW	R7, #23998
+MOVW	R7, #2665
 MOVT	R7, #0
 NOP
 NOP
@@ -527,16 +517,14 @@ SUBS	R7, R7, #1
 BNE	L_s_measure45
 NOP
 NOP
-NOP
 ;SHT11_driver.c,195 :: 		Delay_mS(1);
-MOVW	R7, #23998
+MOVW	R7, #2665
 MOVT	R7, #0
 NOP
 NOP
 L_s_measure47:
 SUBS	R7, R7, #1
 BNE	L_s_measure47
-NOP
 NOP
 NOP
 ;SHT11_driver.c,196 :: 		if (SDA_pin_in == 0)
@@ -920,7 +908,7 @@ MOVW	R0, #lo_addr(SCL_pin+0)
 MOVT	R0, #hi_addr(SCL_pin+0)
 STR	R1, [R0, #0]
 ;SHT11_driver.c,326 :: 		Delay_uS(3);
-MOVW	R7, #70
+MOVW	R7, #6
 MOVT	R7, #0
 NOP
 NOP
@@ -937,7 +925,7 @@ MOVW	R0, #lo_addr(SCL_pin+0)
 MOVT	R0, #hi_addr(SCL_pin+0)
 STR	R1, [R0, #0]
 ;SHT11_driver.c,328 :: 		Delay_uS(3);
-MOVW	R7, #70
+MOVW	R7, #6
 MOVT	R7, #0
 NOP
 NOP
