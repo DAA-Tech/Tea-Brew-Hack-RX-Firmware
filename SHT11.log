@@ -21,11 +21,11 @@ hint: 236	1164	Variable 'rh_lin' has been eliminated by optimizer	SHT11_driver.c
 hint: 238	1164	Variable 't_C' has been eliminated by optimizer	SHT11_driver.c
 hint: 264	1164	Variable 'value' has been eliminated by optimizer	SHT11_driver.c
 hint: 285	1164	Variable 'checksum' has been eliminated by optimizer	SHT11_driver.c
-diagnostics: 0	127	All files Compiled in 125 ms	 
+diagnostics: 0	127	All files Compiled in 156 ms	 
 hint: 0	1144	Used RX: 16 (100%)   Free RX: 0 (0%)	Used RX: 16 (100%)   Free RX: 0 (0%)
 hint: 0	1144	Static RAM (bytes): 85   Dynamic RAM (bytes): 130981	Static RAM (bytes): 85   Dynamic RAM (bytes): 130981
 hint: 0	1144	Used ROM (bytes): 4683 (0%)  Free ROM (bytes): 1043893 (100%)	Used ROM (bytes): 4683 (0%)  Free ROM (bytes): 1043893 (100%)
 diagnostics: 0	125	Project Linked Successfully	SHT11.mcpar
-diagnostics: 0	128	Linked in 313 ms	 
-diagnostics: 0	129	Project 'SHT11.mcpar' completed: 1453 ms	 
-diagnostics: 0	103	Finished successfully: 06 Jun 2015, 22:57:51	SHT11.mcpar
+diagnostics: 0	128	Linked in 375 ms	 
+diagnostics: 0	129	Project 'SHT11.mcpar' completed: 1547 ms	 
+diagnostics: 0	103	Finished successfully: 01 Jul 2015, 22:07:38	SHT11.mcpar
